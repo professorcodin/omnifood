@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.685)) , url("/Recources/img/hero.jpg"); */
+  background-color: rgba(241, 80, 51, 0.959);
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.signup-img {
+  border-radius: 10px;
+  border: 2px solid white;
+  background-image: url("/Recources/img/3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+  width: 50vw;
+  margin-top: 8vh;
+  position: absolute;
+  margin-left: 6vw;
+}
+
+.signup-form {
+  border-radius: 10px;
+  background-color: rgb(232, 232, 232);
+  height: 75vh;
+  width: 45vw;
+  margin-top: 13.5vh;
+  position: absolute;
+  margin-left: 49vw;
+}
+
+#signup-hd {
+  color: rgba(241, 80, 51, 0.959);
+  font-weight: initial;
+  position: relative;
+  top: 5vh;
+}
+
+input::placeholder {
+  color: rgba(241, 80, 51, 0.959);
+}
+
+input {
+  color: rgba(241, 80, 51, 0.959);
+  background-color: rgb(232, 232, 232);
+  border: none;
+  border-bottom: 2px solid rgba(241, 80, 51, 0.959);
+  position: relative;
+  top: 10vh;
+  padding: 0px 20vw 10px 10px;
+  font-size: 18px;
+  margin-top: 5vh;
+}
+
+#signup-btn {
+  border-radius: 10px;
+  position: absolute;
+  text-decoration: none;
+  padding: 10px 65px;
+  background-color: rgba(241, 80, 51, 0.959);
+  color: white;
+  top: 66vh;
+  right: 16vw;
+}
+
+#signup-btn:hover {
+  border: 1px solid rgba(241, 80, 51, 0.959);
+  background-color: transparent;
+  color: rgba(241, 80, 51, 0.959);
+}
+
+#txt-area {
+  position: relative;
+  top: 15vh;
+  
+}

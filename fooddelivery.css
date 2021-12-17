@@ -1,0 +1,978 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------
+HEADER
+----------------------------------------------------------------*/
+
+nav{
+    color: black;
+    background-color: rgba(241, 80, 51, 0.959);
+    display: flex;
+    
+}
+
+.logo{
+    /* background-color: black; */
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+
+.main-nav{
+    /* float: right; */
+    position: absolute;
+    left: 65vw;
+    margin-top: 45px;
+    list-style: none;
+    display: flex;
+    font-size: 18px;
+}
+
+.main-nav li{
+    padding: 10px 0px;
+    /* display: inline-block; */
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li:hover,
+.main-nav li:active{
+    border-bottom: 2px solid rgba(255, 255, 255, 0.959);
+}
+
+.hero-text{
+position: absolute;
+top: 40%;
+left: 10%;
+}
+
+
+
+
+
+/* --------------------------------------------------------------
+HEADER
+----------------------------------------------------------------*/
+
+
+/* Home Page Styling */
+
+.slider{
+    height: auto;
+}
+
+.mySlides{
+    display: none;
+    width:100%; 
+    height: 87vh;
+    position: relative;
+}
+
+.caption{
+    display: none;
+    position: fixed;
+    top: 300px;
+    left: 260px;
+    font-size: 500%;
+    color: #fff;
+}
+
+.cap-txt{
+    /* display: none; */
+    position: fixed;
+    top: 400px;
+    left: 300px;
+    width: 60%;
+    text-align: center;
+    font-size: 150%;
+    color: #fff;
+}
+
+.slider-btn{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* .btn-left{
+    width: 28px;
+    height: 5vh;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.btn-right{
+    width: 28px;
+    height: 5vh;
+    border-radius: 8px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+} */
+
+.welcome{
+    background-color: rgba(41, 41, 41, .93);
+}
+
+.welcome h1{
+    text-align: center;
+    padding-top: 100px;
+    color: #fff;
+    font-size: 300%;
+}
+
+.welcome p{
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.welcome-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+}
+
+.r1, .r2, .r3{
+    box-shadow: 0 10px 67px rgba(41, 41, 41, .93);
+    border-radius: 8px;
+    height: auto;
+    background-color:#fff;
+    width: 25%;
+}
+
+.r1 img, .r2 img, .r3 img{
+    width: 100%;
+    padding: 10px;
+}
+
+.r1 h1, .r2 h1, .r3 h1{
+    font-size: 150%;
+    color: #000;
+    padding: 20px 0 0 0;
+}
+
+.r2, .r3{
+    margin-left: 20px;
+}
+
+.r1 p , .r2 p , .r3 p{
+    margin: 0;
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    color: #000;
+}
+
+.services-section{
+    margin-top: 150px;
+}
+
+.services-section h1{
+    text-align: center;
+    font-size: 250%;
+}
+
+.services-section p{
+    text-align: center;
+    font-size: 120%;
+}
+
+.services{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.s1, .s2, .s3, .s4{
+    width: auto;
+    margin-top: 20px;
+}
+
+.s1 img , .s2 img , .s3 img , .s4 img{
+    padding: 20px 20px 20px 20px;
+}
+
+.s1 h2 , .s2 h2 , .s3 h2 , .s4 h2{
+    text-align: center;
+}
+
+/* About Page Styling */
+
+.about-header {
+    background-image: url('about-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    margin: 24px 0 20px 60px;
+    font-size: 140%;
+    color: #155a7e;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 30px 60px 20px 0;
+}
+
+.nav-links li {
+    margin-right: 35px;
+    font-size: 140%;
+    color: #fff;
+}
+
+.nav-links li:hover {
+    color: #155a7e;
+    border-bottom: 2px solid #155a7e;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 10px 30px 0 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+    position: relative;
+    top: 20px;
+}
+
+.nav-content {
+    color: #fff;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 180%;
+    margin-top: 120px;
+}
+
+.about-section {
+    padding-top: 70px;
+    background: #F7F7F7;
+}
+
+.about-row {
+    display: flex;
+    padding-bottom: 60px;
+    margin-left: 100px;
+}
+
+.btns {
+    margin-top: 10px;
+}
+
+.btns button {
+    width: 340px;
+    height: 100px;
+    margin: 0 0 20px 0;
+    border-radius: 8px;
+    border: 1px solid rgba(41, 41, 41, .93);
+    background-color: rgba(41, 41, 41, .93);
+    color: #fff;
+    font-size: 140%;
+    cursor: pointer;
+}
+
+.btns button:hover, .btns button:active {
+    background-color: rgba(225, 180, 79, 0.91);
+    border: 1px solid rgba(225, 180, 79, 0.91);
+}
+
+.paras {
+    width: 50%;
+    margin: 0 0 0 40px;
+}
+
+.paras h1 {
+    font-size: 300%;
+}
+
+.paras p {
+    margin-top: 30px;
+    font-size: 127%;
+    text-align: justify;
+}
+
+.team-section {
+    padding-top: 80px;
+    position: relative;
+    background-image: url('team_bg.jpg');
+    background-size: cover;
+}
+
+.title {
+    text-align: center;
+    font-size: 150%;
+    color: #E1B44F;
+}
+
+.title::before {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #E1B44F;
+    margin: 6px;
+}
+
+.title::after {
+    display: inline-block;
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color: #E1B44F;
+    margin: 6px;
+}
+
+.farmer {
+    text-align: center;
+    font-size: 300%;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member1, .member2, .member3, .member4 {
+    width: 20%;
+    box-shadow: 0 10px 67px #f8f9fa;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 70px 0 0 25px;
+}
+
+.member1 img, .member2 img, .member3 img, .member4 img {
+    width: 100%;
+    height: 45vh;
+    border-radius: 8px;
+}
+
+.member1 h1, .member2 h1, .member3 h1, .member4 h1 {
+    font-size: 200%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.member1 p, .member2 p, .member3 p, .member4 p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.Testimonals-section {
+    background-color: #f6f4ec;
+    padding-top: 100px;
+}
+
+.testimonals {
+    display: flex;
+}
+
+.txt {
+    margin: 40px 0 0 80px;
+    width: 30%;
+}
+
+.txt h1 {
+    width: 80%;
+    font-size: 250%;
+    color: var(--agriox-primary, #334b35);
+    margin-top: 10px;
+}
+
+.reviews {
+    display: flex;
+    justify-content: flex-start;
+    width: 85%;
+    position: relative;
+}
+
+.review1, .review2 {
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+    background-color: #fff;
+    width: 38%;
+    border-radius: 8px;
+    margin: 0 20px 10px 30px;
+}
+
+.review1 p, .review2 p {
+    margin: 50px 40px 10px 40px;
+    text-align: justify;
+    line-height: 2;
+    font-size: 105%;
+}
+
+.review1 img, .review2 img {
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+.review1 h1, .review2 h1 {
+    display: inline-block;
+    position: absolute;
+    margin-top: 17px;
+    margin-left: 8px;
+}
+
+footer{
+    background-color: rgba(41, 41, 41, .93);
+}
+
+.footer-row{
+    display: flex;
+    margin-left: 100px;
+    padding-top: 50px;
+    color: #fff;
+}
+
+.info{
+    width: 40%;
+}
+
+.info p{
+    width: 80%;
+    margin-top: 10px;
+}
+
+.info ul{
+    list-style: none;
+}
+
+.links ul{
+    list-style: none;
+    margin: 10px 0 0 10px;
+}
+
+.links ul li{
+    margin-bottom: 15px;
+    font-size: 100%;
+}
+
+/* sell styling starts */
+
+.sell-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section-1, .section-2, .section-3, .section-4{
+    width: 23%;
+    border: 1px solid #000;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+}
+
+.section-1 img, .section-2 img, .section-3 img, .section-4 img{
+    width: 100%;
+}
+
+.section-1 h1, p, .section-2 h1, p, .section-3 h1, p, .section-4 h1, p{
+    padding-left: 10px;
+}
+
+.buy-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.section-1 button, .section-2 button, .section-3 button, .section-4 button{
+    width: 100px;
+    background-color: rgba(241, 80, 51, 0.959);
+    color: #fff;
+    border: 1px solid rgba(241, 80, 51, 0.959);
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px 0 10px 0;
+    padding: 6px 15px;
+}
+
+.section-1 button:hover, .section-2 button:hover, .section-3 button:hover, .section-4 button:hover{
+    color: rgba(241, 80, 51, 0.959);
+    background-color: transparent;
+}
+
+
+/* sell styling ends */
+
+/* Sign Up Page Styling Starts */
+
+.signup {
+
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    margin: 70px auto;
+    border: 2px solid cornflowerblue;
+    border-radius: 8px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.signup-image {
+    width: 50%;
+    background-image: url('signup-pic4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.signup-form {
+    width: 50%;
+    padding-top: 30px;
+}
+
+.signup-form h1 {
+    font-size: 150%;
+    text-align: center;
+}
+
+#fullname, #Phnumber, #CNICname, #pass, #Cpass, #address {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin: 20px 20px 0 20px;
+    padding-left: 10px;
+}
+
+#male {
+    margin: 20px 0 0 20px;
+}
+
+#female {
+    margin-left: 10px;
+}
+
+#register {
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid cornflowerblue;
+    margin: 20px 10px 20px 20px;
+    background-color: cornflowerblue;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    width: 100%;
+    text-align: center ;
+    font-size: 25px;
+}
+
+#Nameerror, #Phoneerror, #CNICerror, #gendererror, #addresserror, #passerror, #Confirmerror {
+    display: block;
+    margin: 3px 0 0 20px;
+}
+
+@media (max-width:1120px){
+    .signup{
+        width: 60%;
+    }
+}
+
+@media (max-width:930px){
+    .signup{
+        width: 70%;
+    }
+}
+
+@media (max-width:800px){
+    .signup{
+        width: 80%;
+    }
+}
+
+@media (max-width:700px){
+    #fullname, #Phnumber, #CNICname, #pass, #Cpass, #address, #register  {
+        width: 215px;
+    }
+}
+
+@media (max-width:600px){
+
+    .signup{
+        flex-direction: column;
+    }
+
+    .signup-form {
+        width: 100%;
+    }
+
+    #fullname, #Phnumber, #CNICname, #pass, #Cpass, #address, #register {
+        width: 255px;
+        margin-left: 100px;
+    }
+
+    #male{
+        margin-left: 100px;
+    }
+
+    #female{
+        margin: 0;
+    }
+
+    #Nameerror, #Phoneerror, #CNICerror, #gendererror, #addresserror, #passerror, #Confirmerror {
+        margin-left: 100px;
+        width: 100%;
+    }
+}
+
+@media (max-width:550px){
+    #fullname, #Phnumber, #CNICname, #pass, #Cpass, #address, #register {
+        margin-left: 80px;
+    }
+
+    #male{
+        margin-left: 80px;
+    }
+    #Nameerror, #Phoneerror, #CNICerror, #gendererror, #addresserror, #passerror, #Confirmerror {
+        margin-left: 80px;
+    }
+}
+
+@media (max-width:490px){
+    #fullname, #Phnumber, #CNICname, #pass, #Cpass, #address, #register {
+        margin-left: 60px;
+    }
+
+    #male{
+        margin-left: 60px;
+    }
+    #Nameerror, #Phoneerror, #CNICerror, #gendererror, #addresserror, #passerror, #Confirmerror {
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:425px){
+    #fullname, #Phnumber, #CNICname, #pass, #Cpass, #address, #register {
+        margin-left: 30px;
+    }
+
+    #male{
+        margin-left: 30px;
+    }
+    #Nameerror, #Phoneerror, #CNICerror, #gendererror, #addresserror, #passerror, #Confirmerror {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:370px){
+    #fullname, #Phnumber, #CNICname, #pass, #Cpass, #address, #register {
+        margin-left: 10px;
+    }
+
+    #male{
+        margin-left: 10px;
+    }
+    #Nameerror, #Phoneerror, #CNICerror, #gendererror, #addresserror, #passerror, #Confirmerror {
+        margin-left: 10px;
+    }
+}
+
+/* Sign Up Page Styling Ends  */
+
+/* Sign In Page Styling Starts */
+.signIn {
+
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 60vh;
+    margin: 10vh auto;
+    border: 2px solid cornflowerblue;
+    border-radius: 8px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.signin-image {
+    width: 50%;
+    background-image: url('signIn.jpg');
+    background-position: center;
+}
+
+.signin-form {
+    padding-top: 100px;
+}
+
+.signin-form h1 {
+    font-size: 150%;
+    text-align: center;
+}
+
+#getpassword, #CNICnumber {
+    width: 250px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin: 20px 20px 0 40px;
+    padding-left: 10px;
+}
+
+#login {
+    width: 250px;
+    height: 30px;
+    border-radius: 8px;
+    border: 1px solid cornflowerblue;
+    margin: 20px 10px 20px 40px;
+    background-color: cornflowerblue;
+    color: #fff;
+    cursor: pointer;
+}
+
+@media (max-width:1090px){
+    .signIn{
+        flex-direction: column;
+        height: auto;
+    }
+    #getpassword, #CNICnumber , #login{
+        margin:10px 150px;
+    }
+}
+
+@media (max-width:1040px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 120px;
+    }
+}
+
+@media (max-width:900px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 90px;
+    }
+}
+
+@media (max-width:760px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:650px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 30px;
+        width: 230px;
+    }
+}
+
+@media (max-width:560px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 15px;
+    
+    }
+}
+
+@media (max-width:515px){
+    #getpassword, #CNICnumber , #login{
+        margin-left: 20px;
+    
+    }
+}
+
+@media (max-width:500px){
+    .signIn{
+        width: 60%;
+    }
+}
+
+@media (max-width:430px){
+    .signIn{
+        width: 65%;
+    }
+}
+
+@media (max-width:400px){
+    .signIn{
+        width: 75%;
+    }
+
+    .logo{
+          margin-left: 25px;
+    }
+}
+
+@media (max-width:355px){
+    .signIn{
+        width: 85%;
+    }
+}
+
+/* Sign In Page Styling Ends */
+
+@media (max-width:1200px){
+    .testimonals{
+        flex-direction: column;
+    }
+
+    .txt{
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .reviews{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .review1, .review2{
+        width: 43%;
+    }
+}
+
+@media (max-width:1000px){
+    .section-1, .section-2, .section-3, .section-4{
+        width: 40%;
+    }
+}
+
+@media (max-width:980px){
+    .about-row{
+        margin-left: 60px;
+    }
+}
+
+@media (max-width:900px){
+    .about-row{
+        margin-left: 30px;
+    }
+    .member1, .member2, .member3, .member4 {
+        width: 40%;
+    }
+}
+
+@media (max-width:850px){
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .nav-links {
+        flex-direction: column;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 50px;
+        left: -100%;
+        background-color: #fff;
+        transition: 0.3s;
+        text-align: center;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+        
+    }
+    .nav-links li{
+        padding: 10px 0 20px 0;
+    }
+    .nav-links li:hover {
+        border-bottom:none;
+    }
+    .nav-links li{
+        color: #000;
+    }
+    .nav-links.active {
+        left: 0;
+        z-index: 1;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(18px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .btns{
+        margin:  0 auto;
+    }
+    .about-row{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .paras{
+        width: 80%;
+        margin:  0 auto;
+    }
+}
+
+@media (max-width:765px){
+    .reviews{
+        flex-direction: column;
+    }
+    .review1, .review2{
+        width: 90%;
+    }
+
+    .footer-row{
+        flex-direction: column;
+    }
+    .info{
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width:700px){
+    .welcome-row{
+        flex-direction: column;
+    }
+
+    .r1, .r2, .r3{
+        width: 60%;
+        margin: 10px auto;
+    }
+}
+
+@media (max-width:550px){
+    .member1, .member2, .member3, .member4 {
+        width: 50%;
+    }
+}
+
+@media (max-width:450px){
+    .paras h1 {
+        font-size: 200%;
+    }
+    .txt h1 {
+        width: 100%;
+        font-size: 176%;
+    }
+}

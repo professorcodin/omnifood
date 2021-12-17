@@ -1,0 +1,330 @@
+/* -------------------------------------
+BASIC SETUP
+------------------------------------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+background-color: white;
+color: black;
+font-family: 'lato','Arial',sans-serif;
+font-size: 20px;
+font-weight: 700;
+text-rendering: optimizeLegibility;
+}
+
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* -------------------------------------
+HEADER
+------------------------------------- */
+
+header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.685)) , url('/Recources/img/hero.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+
+.main-nav{
+    float: right;
+    margin-top: 45px;
+    list-style: none;
+    display: flex;
+}
+
+.main-nav li{
+    padding: 10px 0px;
+    /* display: inline-block; */
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited{
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+}
+
+.main-nav li:hover,
+.main-nav li:active{
+    border-bottom: 2px solid rgba(241, 80, 51, 0.959);
+}
+
+.hero-text{
+position: absolute;
+top: 40%;
+left: 10%;
+}
+
+
+
+/* -------------------------------------
+SECTION FEATURES
+------------------------------------- */
+section{
+    padding: 90px 0px;
+}
+
+.long-copy{
+    text-align: justify;
+    font-family:sans-serif;
+    margin-bottom: 70px;
+    width: 70%;
+    margin-left:15% ;
+   
+}
+
+
+.icon-big{
+    display: block;
+    font-size: 300%;
+    color: rgba(241, 80, 51, 0.959);
+    margin-bottom: 10px;
+}
+
+/* -------------------------------------
+SECTION MEALS
+------------------------------------- */
+
+.section-meals{
+    padding: 0;
+    
+}
+
+.meals-showcase{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    
+}
+
+.meals-showcase li{
+    display: block;
+    /* float: left; */
+    width: 25%;
+    
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    
+}
+
+.meals-showcase  img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 0.6;
+    
+}
+
+.meals-showcase img:hover{
+    opacity: 1;
+    transform: scale(1);
+    transition: transform 0.3s , opacity 0.5s;
+}
+
+/* -------------------------------------
+APP SECTION
+------------------------------------- */
+
+.section-app{
+    background-color: rgb(236, 236, 236);
+}
+
+.app-screen{
+    /* height: 40%; */
+    width: 40%;
+}
+
+.steps-box{
+    margin-top: 70px;
+}
+
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 5%;
+
+}
+
+.steps-box:last-child{
+    padding-left: 5%;
+    margin-top: 60px;
+}
+
+.work-steps:last-of-type{
+    margin-bottom: 80px;
+}
+
+.work-steps{
+    margin: 33px 0;
+}
+
+.work-steps div{
+    font-size: 150%;
+    border: 2px solid rgba(241, 80, 51, 0.959);
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    text-align: center ;
+    padding: 5px;
+    float: left;
+    margin-right: 5% ;
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+}
+
+/* -------------------------------------
+SECTION CITIES
+------------------------------------- */
+
+
+.city-img{
+
+    height: 170px;
+    width: 250px;
+}
+
+.icon-small{
+display: inline-block;
+color: rgba(241, 80, 51, 0.959);
+text-align: center;
+vertical-align: middle;
+margin-top: -4px;
+font-size: 120%;
+
+}
+
+
+.twiter-link:link,
+.twiter-link:visited
+{
+    text-decoration: none;
+    color: rgba(241, 80, 51, 0.959);
+    padding-bottom: 5px;
+    
+}
+
+.twiter-link:hover{
+border-bottom: 1px solid rgba(241, 80, 51, 0.959);
+
+}
+
+
+
+
+/* -------------------------------------
+HEADINGS
+------------------------------------- */
+
+h1,h2{
+   
+    font-size: 250%;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+h1{
+    margin: 0;
+    color: white;
+}
+h2{
+    color: black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+h2::after{
+    display: block;
+    height: 2px;
+    background-color:rgba(241, 80, 51, 0.959);
+    content: " ";
+    width: 140px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+h3{
+    font-size: 110%;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase; 
+}
+
+/* -------------------------------------
+BUTTONS
+------------------------------------- */
+
+.btn:link,
+.btn:visited{
+   display: inline-block;
+   padding: 10px 30px;
+   font-weight: 300;
+   text-decoration: none ;
+   border-radius: 5px;
+}
+
+.btn-hungry:link,
+.btn-hungry:visited{
+    border: 1px solid rgba(241, 80, 51, 0.959);
+    background-color: rgba(241, 80, 51, 0.959);
+    color: white;
+
+}
+
+.btn-more:link,
+.btn-more:visited{
+    color: rgba(241, 80, 51, 0.959);
+    border: 1px solid rgba(241, 80, 51, 0.959);
+}
+
+.btn-hungry:hover{
+border:1px solid white;
+background-color: rgba(230, 72, 44, 0.788);
+transition: border 0.5s , background-color 0.2s;
+}
+
+.btn-more:hover{
+border:1px solid white;
+background-color: rgba(230, 72, 44, 0.788);
+color: white;
+transition: border 0.5s , color 0.5s;
+}
+
+/* -------------------------------------
+FOOTER
+------------------------------------- */
+
+footer{
+    background-color: black;
+    color: white;
+    height: 20vh;
+    width: 100%;
+    text-align: center ;
+}
